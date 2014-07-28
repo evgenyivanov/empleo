@@ -1,0 +1,11 @@
+<div id = 'next_page'>
+<div id="oferts">
+<table class="table" style="width: 900px">
+<tr><th>Fecha</th><th>Empleo</th><th>Contrato</th><th>Ubicacion</th><th>{{title}}</th></tr>
+{% for i in List%}
+<tr><th><a href="/{{url}}/{{i.id}}"  target="_blank">{{i.date}}</a></th><th><a href="/{{url}}/{{i.id}}"  target="_blank">{{i.title}}</a></th><th><a href="/{{url}}/{{i.id}}"  target="_blank">{{i.type}}</a></th><th><a href="/{{url}}/{{i.id}}"  target="_blank">{{i.areal}}</a></th><th><a href="/{{url}}/{{i.id}}"  target="_blank">{{i.firma}}</a><th></tr>
+{% endfor %}
+</table>
+<div id = "page"> {{m|safe}}</div>
+</div>
+</div>

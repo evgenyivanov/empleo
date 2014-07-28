@@ -1,0 +1,34 @@
+
+#areal {
+
+	-moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+    -khtml-border-radius: 14px; 
+    border-radius: 14px;/*Opera*/ 
+}
+
+#tipo {
+
+	-moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+    -khtml-border-radius: 14px; 
+    border-radius: 14px;/*Opera*/ 
+}
+
+#home {
+position: absolute; 
+	left: 5px;
+	top: 10px;
+}
+
+#vvv {
+position: absolute; 
+	left: 60px;
+	top: 30px;
+}
+
+#files {
+position: absolute; 
+	left: 180px;
+}
+

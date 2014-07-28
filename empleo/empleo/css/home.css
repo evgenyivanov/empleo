@@ -1,0 +1,115 @@
+#overview {
+   background: #fefcea; /* Для старых браузров */
+    background: -moz-linear-gradient(top, #fefcea, #f1da36); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#fefcea), color-stop(100%,#f1da36));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #fefcea, #f1da36);
+    background: -o-linear-gradient(top, #fefcea, #f1da36); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fefcea, #f1da36); /* IE10 */
+    background: linear-gradient(top, #fefcea, #f1da36); /* CSS3 */ 
+    padding: 10px;
+    border: 1px solid #333;
+   }
+	
+
+#params {
+position: absolute; 
+	left: 50px;
+	top: 210px;
+
+}
+
+#areal {
+position: absolute; 
+	left: 280px;
+	top: 0px;
+	-moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+    -khtml-border-radius: 14px; 
+    border-radius: 14px;/*Opera*/ 
+}
+
+#tipo {
+position: absolute; 
+	left: 640px;
+	top: 0px;
+	-moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+    -khtml-border-radius: 14px; 
+    border-radius: 14px;/*Opera*/ 
+}
+
+#en {
+position: absolute; 
+	left: 250px;
+	top: 9px;
+	
+	}
+	
+
+#tpc {
+position: absolute; 
+	left: 510px;
+	top: 9px;
+	
+	}
+#buscar {
+position: absolute; 
+	left: 920px;
+	top: 200px;
+	
+	}
+#check_group {
+position: absolute; 
+	left: 200px;
+	top: 250px;
+	
+	}
+	
+#check_group1 {
+position: absolute; 
+	left: 300px;
+	top: 250px;
+	
+	}
+
+#add {
+position: absolute; 
+	right: 45px;
+	top: 162px;
+	
+	}
+	
+#oferts {
+position: absolute; 
+	left: 50px;
+	top: 300px;
+
+}
+
+#page {
+position: absolute; 
+	left: 50px;
+
+	
+	}
+	
+#copyr {
+position: absolute; 
+	right: 70px;
+	top: 1150px;
+	}
+#rss {
+position: absolute; 
+	right: 4px;
+	top: 5px;
+	
+	}
+#correo {
+position: absolute; 
+	right: 250px;
+	top: 1150px;
+	}
+	

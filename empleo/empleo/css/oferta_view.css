@@ -1,0 +1,18 @@
+#fields {
+position: absolute; 
+	left: 170px;
+	top: 20px;
+
+}
+
+#home {
+position: absolute; 
+	left: 10px;
+	top: 10px;
+}
+
+#edit {
+position: absolute; 
+	left: 640px;
+	top: 10px;
+}

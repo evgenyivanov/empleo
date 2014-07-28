@@ -1,0 +1,61 @@
+
+#areal {
+
+	-moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+    -khtml-border-radius: 14px; 
+    border-radius: 14px;/*Opera*/ 
+}
+
+#tipo {
+
+	-moz-border-radius: 14px; 
+    -webkit-border-radius: 14px; 
+    -khtml-border-radius: 14px; 
+    border-radius: 14px;/*Opera*/ 
+}
+
+#home {
+position: absolute; 
+	left: 5px;
+	top: 10px;
+}
+
+#vvv {
+position: absolute; 
+	left: 60px;
+	top: 30px;
+}
+
+#files {
+position: absolute; 
+	left: 180px;
+}
+
+#contac {
+position: absolute; 
+	left: 450px;
+	top: 400px;
+}
+
+#download {
+position: absolute; 
+	left: 180px;
+}
+
+#url {
+position: absolute; 
+	left: 180px;
+}
+
+#edit {
+position: absolute; 
+	left: 860px;
+	top: 10px;
+}
+
+#enviar {
+position: absolute; 
+	left: 240px;
+	top: 530px;
+}

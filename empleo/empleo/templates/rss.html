@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!--  If you are running a bot please visit this policy page outlining rules you must respect. http://www.livejournal.com/bots/  -->
+<rss version='2.0' xmlns:lj='http://www.livejournal.org/rss/lj/1.0/' xmlns:media='http://search.yahoo.com/mrss/' xmlns:atom10='http://www.w3.org/2005/Atom'>
+<channel>
+  <title>Ofertas de empleo en argentina</title>
+  <link>http://localhost:8000/</link>
+  <description>'title site'</description>
+  <lastBuildDate>{{date}}</lastBuildDate>
+  <generator>'site url'</generator>
+
+
+{%for i in List%}
+<item>
+  <guid isPermaLink='true'>{{i.url}}</guid>
+  <pubDate>{{i.date}}</pubDate>
+  <title>{{i.subject}}</title>
+  <link>{{i.url}}</link>
+  <description>{{i.text}}</description>
+
+</item>
+{%endfor%}
+
+</channel>
+</rss>

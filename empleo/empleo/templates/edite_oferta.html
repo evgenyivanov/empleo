@@ -1,0 +1,77 @@
+﻿<br><br><br><br>
+<div id="home">
+<a href="/"><button class="btn btn-success btn-large active"><i class="icon-white icon-home" ></i> Home</button></a>
+</div>
+<div id="vvv">
+<form class="form-horizontal" enctype="multipart/form-data" method="post" action="/save_oferta/" onsubmit="return chekin()">
+<fieldset>
+<input type="hidden" name="id" id="id" value="{{id}}">
+<div class="control-group">
+<label class="control-label">Título del trabajo</label> <div class="controls"> <input type="text" name="title" id="title" value="{{title}}" style="width: 600px"><br></div></div>
+
+<div class="control-group">
+<label class="control-label">
+Ubicación</label> <div class="controls"> <select id="areal" name="areal" class="search-query">
+{% for j in list1%}
+{{j|safe}}
+{%endfor%}
+  </select></div></div>
+  
+<div class="control-group">
+<label class="control-label">
+Descripción</label>  <div class="controls">     
+<textarea id="description" name="description" style="width: 600px; height: 150px">{{description}}</textarea></div></div>
+
+<div class="control-group">
+  <label class="control-label">
+Requisitos</label><div class="controls"> 
+<textarea id="requisitos" name="requisitos" style="width: 600px; height: 150px">{{requisitos}}</textarea><br></div></div>
+
+<div class="control-group">
+  <label class="control-label">
+Contrato:</label><div class="controls"> 
+<select id="tipo" name="tipo"class="search-query">
+{% for j in list2%}
+{{j|safe}}
+{%endfor%}
+</select>
+</div></div>
+<br>
+
+
+
+<div class="control-group">
+<label class="control-label">Organización</label> <div class="controls"> <input type="text" name="firma" id="firma" value="{{firma}}" style="width: 600px"><br></div></div>
+
+<div class="control-group">
+  <label class="control-label" for="inputIcon">Contacto</label>
+  <div class="controls">
+    <div class="input-prepend">
+      <span class="add-on"><i class="icon-envelope"></i></span>
+      <input class="span2" id="contacto" name="contacto" value="{{email}}" type="text" style="color:grey; font-style: italic" onkeypress ="email('');">
+    </div>
+  </div>
+</div>
+
+
+<div class="control-group">
+<label class="control-label">URL</label> <div class="controls"> <input type="text" name="url" id="url" value="{{url}}" style="width: 600px"><br></div></div>
+
+
+
+
+<div class="control-group">
+  <div class="controls">
+    <button id="button1id"  name="button1id" class="btn btn-success">Guardar</button>
+    <button id="button2id" onclick="window.st=2;" name="button2id" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+</fieldset>
+</form>
+
+</div>
+
+
+
+
+

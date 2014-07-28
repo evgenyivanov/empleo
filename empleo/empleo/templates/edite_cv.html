@@ -1,0 +1,95 @@
+﻿
+
+
+<div id="home">
+<button onclick="window.close()" class="btn btn-success btn-large active"><i class="icon-white icon-home" ></i> Home</button>
+</div>
+
+
+<div id="vvv">
+<form class="form-horizontal" enctype="multipart/form-data" method="post" action="/edite_cv2/" onsubmit="return chekin1()">{% csrf_token %}
+<fieldset>
+<div class="control-group">
+<label class="control-label">Título del trabajo</label> <div class="controls"> <input type="text" name="title" id="title" value="{{title}}" style="width: 600px" ><br></div></div>
+
+<div class="control-group">
+<label class="control-label">
+Ubicación</label> <div class="controls"> <select id="areal" name="areal" class="search-query">
+{% for i in list1 %}
+{{i|safe}}
+{%endfor%}
+</select></div></div>
+  
+<div class="control-group">
+<label class="control-label">Estudios:</label> <div class="controls"> <input type="text" name="education" id="education" value="{{education}}" style="width: 600px" ><br></div></div>
+
+<div class="control-group">
+<label class="control-label">Experencia:</label> <div class="controls"> <input type="text" name="experencia" id="experencia" value="{{experencia}}" style="width: 600px" ><br></div></div>
+
+<div class="control-group">
+<label class="control-label">Edad:</label> <div class="controls"> <input type="text" name="age" id="age" value="{{age}}" style="width: 600px" ><br></div></div>
+
+<div class="control-group">
+<label class="control-label">Nivel de Inglés:</label> <div class="controls"> <input type="text" name="english" id="english" value="{{english}}" style="width: 600px" ><br></div></div>
+
+<div class="control-group">
+<label class="control-label">Permiso de trabajo:</label> <div class="controls"> <input type="text" name="permiso" id="permiso" value="{{permiso}}" style="width: 600px"  ><br></div></div>
+
+<div class="control-group">
+<label class="control-label">Nacionalidad:</label> <div class="controls"> <input type="text" name="nacional" id="nacional" value="{{nacional}}" style="width: 600px" ><br></div></div>
+
+
+<div class="control-group">
+  <label class="control-label">
+Contrato:</label><div class="controls"> 
+<select id="tipo" name="tipo"class="search-query">
+{%for i in list2%}
+{{i|safe}}
+{%endfor%}
+</select>
+</div></div>
+
+<div class="control-group">
+<label class="control-label">Nombre</label> <div class="controls"> <input type="text" name="name" id="name" value="{{firma}}" style="width: 600px" ></div></div>
+
+{%if url != "" %}
+
+<div class="control-group">
+<label class="control-label">URL:</label> <div class="controls"> <input type="text" name="url" id="url" value="{{url}}" style="width: 600px" ><br></div></div>
+
+{%endif%} 
+
+
+
+
+
+<div id="CV1" style="position: absolute;left: 180px;">
+<span class="btn btn-success btn-file">
+    <i class="icon-plus"> </i><span>CV</span>
+ <input type="file" id="cv" name="cv" value="{{urlcv}}">
+</span>
+</div>
+ 
+
+</fieldset>
+<br><br><br>
+<div class="control-group">
+  <div class="controls">
+    <button id="button3id"  name="button3id" class="btn btn-success">Guardar</button>
+    <button id="button3id" onclick="window.st=2;" name="button4id" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+
+<input type="hidden" name="id" value="{{id}}">
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
